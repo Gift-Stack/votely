@@ -12,5 +12,4 @@ contract('Ballot', (accounts) => {
     assert.equal(get[1], 'Gift Opia')
     assert.equal(get[2], 'SLN')
   })
-
 })
