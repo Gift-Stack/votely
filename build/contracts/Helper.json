@@ -1,0 +1,449 @@
+{
+  "contractName": "Helper",
+  "abi": [],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.9+commit.e5eed63a\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/utils/Helpers.sol\":\"Helper\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/utils/Helpers.sol\":{\"keccak256\":\"0x5c46dbc189c4e29735897326cacc8965aa6b4a309c46185a3e7733dfeba4b7de\",\"urls\":[\"bzz-raw://515ad9631ed6993608f9025a99891c1a1658201b85c2f13596ced42ad302cfe9\",\"dweb:/ipfs/QmQGDfoXGvw5UriAM1VE4EvDq63JZjXQePb9AzuTtyD4Rp\"]}},\"version\":1}",
+  "bytecode": "0x6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea26469706673582212206396e53ec2bef46867aeb7b51a58bd893b17cd4b9d8f94922f877fdc74704ac764736f6c63430008090033",
+  "deployedBytecode": "0x6080604052600080fdfea26469706673582212206396e53ec2bef46867aeb7b51a58bd893b17cd4b9d8f94922f877fdc74704ac764736f6c63430008090033",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "25:133:3:-:0;;;;;;;;;;;;;;;;;;;",
+  "deployedSourceMap": "25:133:3:-:0;;;;;",
+  "source": "pragma solidity ^0.8.0;\n\ncontract Helper {\n    modifier Votable(uint256 age) {\n        require(age > 18, \"Voter is not eligible to vote.\");\n        _;\n    }\n}\n",
+  "sourcePath": "C:\\Users\\HP\\Desktop\\voter_sol\\contracts\\utils\\Helpers.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/utils/Helpers.sol",
+    "exportedSymbols": {
+      "Helper": [
+        360
+      ]
+    },
+    "id": 361,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 346,
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:3"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "Helper",
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "id": 360,
+        "linearizedBaseContracts": [
+          360
+        ],
+        "name": "Helper",
+        "nameLocation": "34:6:3",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": {
+              "id": 358,
+              "nodeType": "Block",
+              "src": "77:79:3",
+              "statements": [
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "commonType": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        },
+                        "id": 353,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "leftExpression": {
+                          "id": 351,
+                          "name": "age",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 348,
+                          "src": "95:3:3",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        "nodeType": "BinaryOperation",
+                        "operator": ">",
+                        "rightExpression": {
+                          "hexValue": "3138",
+                          "id": 352,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "kind": "number",
+                          "lValueRequested": false,
+                          "nodeType": "Literal",
+                          "src": "101:2:3",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_rational_18_by_1",
+                            "typeString": "int_const 18"
+                          },
+                          "value": "18"
+                        },
+                        "src": "95:8:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      },
+                      {
+                        "hexValue": "566f746572206973206e6f7420656c696769626c6520746f20766f74652e",
+                        "id": 354,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "105:32:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_25c8609d2c9cfa454af72cf06942d0f890ab33590a7fd336d8121712f0119efd",
+                          "typeString": "literal_string \"Voter is not eligible to vote.\""
+                        },
+                        "value": "Voter is not eligible to vote."
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        },
+                        {
+                          "typeIdentifier": "t_stringliteral_25c8609d2c9cfa454af72cf06942d0f890ab33590a7fd336d8121712f0119efd",
+                          "typeString": "literal_string \"Voter is not eligible to vote.\""
+                        }
+                      ],
+                      "id": 350,
+                      "name": "require",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [
+                        4294967278,
+                        4294967278
+                      ],
+                      "referencedDeclaration": 4294967278,
+                      "src": "87:7:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
+                        "typeString": "function (bool,string memory) pure"
+                      }
+                    },
+                    "id": 355,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "87:51:3",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 356,
+                  "nodeType": "ExpressionStatement",
+                  "src": "87:51:3"
+                },
+                {
+                  "id": 357,
+                  "nodeType": "PlaceholderStatement",
+                  "src": "148:1:3"
+                }
+              ]
+            },
+            "id": 359,
+            "name": "Votable",
+            "nameLocation": "56:7:3",
+            "nodeType": "ModifierDefinition",
+            "parameters": {
+              "id": 349,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 348,
+                  "mutability": "mutable",
+                  "name": "age",
+                  "nameLocation": "72:3:3",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 359,
+                  "src": "64:11:3",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 347,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "64:7:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "63:13:3"
+            },
+            "src": "47:109:3",
+            "virtual": false,
+            "visibility": "internal"
+          }
+        ],
+        "scope": 361,
+        "src": "25:133:3",
+        "usedErrors": []
+      }
+    ],
+    "src": "0:159:3"
+  },
+  "legacyAST": {
+    "absolutePath": "project:/contracts/utils/Helpers.sol",
+    "exportedSymbols": {
+      "Helper": [
+        360
+      ]
+    },
+    "id": 361,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 346,
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:3"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "Helper",
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "id": 360,
+        "linearizedBaseContracts": [
+          360
+        ],
+        "name": "Helper",
+        "nameLocation": "34:6:3",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": {
+              "id": 358,
+              "nodeType": "Block",
+              "src": "77:79:3",
+              "statements": [
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "commonType": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        },
+                        "id": 353,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "leftExpression": {
+                          "id": 351,
+                          "name": "age",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 348,
+                          "src": "95:3:3",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        "nodeType": "BinaryOperation",
+                        "operator": ">",
+                        "rightExpression": {
+                          "hexValue": "3138",
+                          "id": 352,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "kind": "number",
+                          "lValueRequested": false,
+                          "nodeType": "Literal",
+                          "src": "101:2:3",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_rational_18_by_1",
+                            "typeString": "int_const 18"
+                          },
+                          "value": "18"
+                        },
+                        "src": "95:8:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      },
+                      {
+                        "hexValue": "566f746572206973206e6f7420656c696769626c6520746f20766f74652e",
+                        "id": 354,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "105:32:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_25c8609d2c9cfa454af72cf06942d0f890ab33590a7fd336d8121712f0119efd",
+                          "typeString": "literal_string \"Voter is not eligible to vote.\""
+                        },
+                        "value": "Voter is not eligible to vote."
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        },
+                        {
+                          "typeIdentifier": "t_stringliteral_25c8609d2c9cfa454af72cf06942d0f890ab33590a7fd336d8121712f0119efd",
+                          "typeString": "literal_string \"Voter is not eligible to vote.\""
+                        }
+                      ],
+                      "id": 350,
+                      "name": "require",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [
+                        4294967278,
+                        4294967278
+                      ],
+                      "referencedDeclaration": 4294967278,
+                      "src": "87:7:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
+                        "typeString": "function (bool,string memory) pure"
+                      }
+                    },
+                    "id": 355,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "87:51:3",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 356,
+                  "nodeType": "ExpressionStatement",
+                  "src": "87:51:3"
+                },
+                {
+                  "id": 357,
+                  "nodeType": "PlaceholderStatement",
+                  "src": "148:1:3"
+                }
+              ]
+            },
+            "id": 359,
+            "name": "Votable",
+            "nameLocation": "56:7:3",
+            "nodeType": "ModifierDefinition",
+            "parameters": {
+              "id": 349,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 348,
+                  "mutability": "mutable",
+                  "name": "age",
+                  "nameLocation": "72:3:3",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 359,
+                  "src": "64:11:3",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 347,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "64:7:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "63:13:3"
+            },
+            "src": "47:109:3",
+            "virtual": false,
+            "visibility": "internal"
+          }
+        ],
+        "scope": 361,
+        "src": "25:133:3",
+        "usedErrors": []
+      }
+    ],
+    "src": "0:159:3"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.9+commit.e5eed63a.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.3",
+  "updatedAt": "2021-11-09T18:58:16.445Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}
